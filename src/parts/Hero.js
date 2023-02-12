@@ -18,7 +18,7 @@ export default function Hero(props) {
   return (
     <section className="container pt-4">
       <div className="row align-items-center">
-        <div className="col-auto pr-5" style={{ width: 422 }}>
+        <div className="col-auto pr-5" style={{ width: 530 }}>
           <h1 className="h2 font-weight-bold line-height-1 mb-3">
             Forget Busy Work <br />
             Get Your Vacation
@@ -37,7 +37,7 @@ export default function Hero(props) {
             Show Me Now
           </Button>
           <div className="row mt-5">
-            <div className="col-auto">
+            <div className="col-auto" style={{marginRight: 35}}>
               <img
                 width="36"
                 height="36"
@@ -50,7 +50,7 @@ export default function Hero(props) {
               </h6>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5" style={{marginRight: 35}}>
             <div className="col-auto">
               <img
                 width="36"
