@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+@import "colorVariables";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -185,15 +186,15 @@ section {
     }
 
     &:hover {
-        .meta-wrapper {
-            transform: translateY(-10px);
-        }
-        &:after {
-            transform: scale(1);
-        }
-        .img-wrapper {
-            transform: scale(1);
-        }
+      .meta-wrapper {
+        transform: translateY(-10px);
+      }
+      &:after {
+        transform: scale(1);
+      }
+      .img-wrapper {
+        transform: scale(1);
+      }
     }
   }
 }
