@@ -11,7 +11,7 @@
     mask: url(../../assets/images/icons/star.svg) no-repeat center left;
     &:not(.placeholder) {
       z-index: 2;
-      background-color: $yellow;
+      background-color: $orange;
     }
     &.placeholder {
       z-index: 1;
