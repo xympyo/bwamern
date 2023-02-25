@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import propTypes from "prop-types";
 
-import { DateRange } from "react-data-range";
+import { DateRange, DateRangePicker, DefinedRange } from "react-date-range";
 
 import "./index.scss";
-import "react-data-range/dist/style.css";
-import "react-date-range/dist/theme/default.css";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
 
 import formatDate from "utils/formatDate";
 import iconCalendar from "../../../assets/images/icons/icon_calendar.svg";
