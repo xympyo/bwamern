@@ -19,23 +19,22 @@ export default class Example extends Component {
   render() {
     console.log(this.state.value);
     return (
-      <div
-        className="row align-items-center justify-content-center"
-        style={{ height: "100vh" }}
-      >
-        <Fade direction="left">
-          <div className="col-auto">
-            <InputDate
-              max={30}
-              onChange={this.handleChange}
-              name="value"
-              value={this.state.value}
-            />
-          </div>
-        </Fade>
-        {/* <div className="col-auto">
-          <InputDate />
-        </div> */}
+      <div className="container">
+        <div
+          className="row align-items-center justify-content-center"
+          style={{ height: "100vh" }}
+        >
+          <Fade direction="left">
+            <div className="col-auto">
+              <InputDate
+                max={30}
+                onChange={this.handleChange}
+                name="value"
+                value={this.state.value}
+              />
+            </div>
+          </Fade>
+        </div>
       </div>
     );
   }

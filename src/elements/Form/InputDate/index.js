@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import propTypes from "prop-types";
 
-import { DateRange, DateRangePicker, DefinedRange } from "react-date-range";
+import { DateRange } from "react-date-range";
 
 import "./index.scss";
 import "react-date-range/dist/styles.css"; // main style file
@@ -12,7 +12,7 @@ import iconCalendar from "../../../assets/images/icons/icon_calendar.svg";
 
 export default function Date(props) {
   const { value, placeholder, name } = props;
-  const { isShowed, setIsShowed } = useState(false);
+  const [isShowed, setIsShowed] = useState(false);
 
   const datePickerChange = (value) => {
     const target = {
