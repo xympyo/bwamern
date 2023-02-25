@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import propTypes from "prop-types";
 
-import { DateRange } from "react-date-range";
+import { DateRange } from "react-data-range";
 
 import "./index.scss";
-import "react-date-range/dist/style.css";
+import "react-data-range/dist/style.css";
 import "react-date-range/dist/theme/default.css";
 
 import formatDate from "utils/formatDate";
