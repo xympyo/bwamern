@@ -6,7 +6,11 @@ import InputDate from "../elements/Form/InputDate";
 
 export default class Example extends Component {
   state = {
-    value: "1",
+    value: {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
   };
 
   handleChange = (e) => {
@@ -17,14 +21,12 @@ export default class Example extends Component {
     return (
       <div
         className="row align-items-center justify-content-center"
-        style={{ height: "100vh", border: "border-primary" }}
+        style={{ height: "100vh" }}
       >
         <Fade direction="left">
           <div className="col-auto">
-            <InputNumber
+            <InputDate
               max={30}
-              suffix=" night"
-              isSuffixPlural
               onChange={this.handleChange}
               name="value"
               value={this.state.value}

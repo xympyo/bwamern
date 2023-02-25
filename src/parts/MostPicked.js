@@ -15,7 +15,7 @@ export default function MostPicked(props) {
                 key={`mostpicked-${index}`}
                 className={`item column-4${index === 0 ? " row-2" : " row-1"}`}
               >
-                <Fade direction="down">
+                {/* <Fade direction="down"> */}
                   <div className="card card-featured">
                     <div className="tag">
                       ${item.price}
@@ -41,7 +41,7 @@ export default function MostPicked(props) {
                       </span>
                     </div>
                   </div>
-                </Fade>
+                {/* </Fade> */}
               </div>
             );
           })}
