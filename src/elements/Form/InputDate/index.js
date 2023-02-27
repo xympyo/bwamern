@@ -21,6 +21,7 @@ export default function Date(props) {
         name: name,
       },
     };
+    props.onChange(target);
   };
 
   useEffect(() => {

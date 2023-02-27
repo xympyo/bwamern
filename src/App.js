@@ -7,7 +7,7 @@ import TestingPage from "./pages/TestingPage"
 function App () {
   return <div className="App">
     <Router>
-      <Route path="/" component={TestingPage}></Route>
+      <Route path="/" component={LandingPage}></Route>
     </Router>
   </div>
 }

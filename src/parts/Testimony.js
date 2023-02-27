@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 import TestimonyAccent from "../assets/images/testimonial-landingpages-frame.jpg";
 import Star from "elements/Star";
@@ -7,8 +7,8 @@ import Button from "elements/Button";
 
 export default function Testimony({ data }) {
   return (
-    <Fade bottom>
-      <section className="container">
+    <section className="container">
+      <Slide direction="down">
         <div className="row align-items-center">
           <div className="col-auto" style={{ marginRight: 50 }}>
             <div
@@ -52,7 +52,7 @@ export default function Testimony({ data }) {
             </div>
           </div>
         </div>
-      </section>
-    </Fade>
+      </Slide>
+    </section>
   );
 }
