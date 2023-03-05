@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide } from "react-awesome-reveal";
+import Fade from "react-reveal";
 
 import Button from "elements/Button";
 
@@ -7,7 +7,7 @@ export default function Categories({ data }) {
   return data.map((category, index1) => {
     return (
       <section className="container" key={`category-${index1}`}>
-        <Slide direction="bottom">
+        <Fade bottom>
           <h4 className="mb-3 font-weight-medium">{category.name}</h4>
           <div className="container-grid">
             {category.items.length === 0 ? (
@@ -23,7 +23,7 @@ export default function Categories({ data }) {
                     className="item column-3 row-1"
                     key={`category-${index1}-item-${index2}`}
                   >
-                    <Slide direction="bottom" delay={250 * index2}>
+                    <Fade bottom delay={250 * index2}>
                       <div className="card">
                         {item.isPopular && (
                           <div className="tag">
@@ -51,13 +51,13 @@ export default function Categories({ data }) {
                           </span>
                         </div>
                       </div>
-                    </Slide>
+                    </Fade>
                   </div>
                 );
               })
             )}
           </div>
-        </Slide>
+        </Fade>
       </section>
     );
   });

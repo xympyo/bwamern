@@ -11,7 +11,7 @@ const setup = () => {
 
   const { container } = render(
     <Router>
-      <Breadcump data={breadcrumbList} className="breadcrumb" />
+      <Breadcump data={breadcrumbList} className={["breadcrumb"]} />
     </Router>
   );
 

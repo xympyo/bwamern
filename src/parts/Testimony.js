@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide } from "react-awesome-reveal";
+import Slide from "react-reveal";
 
 import TestimonyAccent from "../assets/images/testimonial-landingpages-frame.jpg";
 import Star from "elements/Star";
