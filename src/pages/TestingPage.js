@@ -10,9 +10,9 @@ export default class Example extends Component {
     const breadcrumb = [
       {
         pageTitle: "Home",
-        pageHref: "",
+        pageHref: ""
       },
-      { PageTitle: "House Details", pageHref: "" },
+      { pageTitle: "House Details", pageHref: "" },
     ];
 
     return (
@@ -22,7 +22,7 @@ export default class Example extends Component {
           style={{ height: "100vh" }}
         >
           <div className="col-auto">
-            <Breadcrumb data={breadcrumb} />
+            <Breadcrumb data={breadcrumb} className={["breadcrumb"]} />
           </div>
         </div>
       </div>

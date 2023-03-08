@@ -8,7 +8,7 @@ import "./index.scss";
 export default function Breadcrumb(props) {
   return (
     <nav aria-label="breadcrumb">
-      <ol className={props.className.join(" ")}>
+      <ol className={props?.className?.join(" ")}>
         {props.data.map((item, index) => {
           return (
             <li
