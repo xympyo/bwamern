@@ -22,19 +22,19 @@
   "unit": "night",
   "isPopular": true,
   "hasBackyard": true,
-  "description": "<p> 'Hotel of the Thousands' is a luxurious hotel located in the heart of Central Java, Indonesia. This hotel offers its guests a unique blend of traditional Javanese culture and modern amenities. The hotel features elegant rooms and suites, each equipped with comfortable furnishings and the latest technology. Guests can enjoy breathtaking views of the surrounding mountains and lush greenery from their private balconies.</p> <br /> The hotel also offers a wide range of facilities, including a fitness center, spa, and outdoor swimming pool. Guests can indulge in delicious local and international cuisine at the hotel's restaurant, or enjoy a relaxing drink at the bar.",
+  "description": "<p> 'Hotel of the Thousands' is a luxurious hotel located in the heart of Central Java, Indonesia. This hotel offers its guests a unique blend of traditional Javanese culture and modern amenities. The hotel features elegant rooms and suites, each equipped with comfortable furnishings and the latest technology. Guests can enjoy breathtaking views of the surrounding mountains and lush greenery from their private balconies.</p> <br /> <p>The hotel also offers a wide range of facilities, including a fitness center, spa, and outdoor swimming pool. Guests can indulge in delicious local and international cuisine at the hotel's restaurant, or enjoy a relaxing drink at the bar.<p /> <br/ > <p>The hotel's location in Central Java makes it the perfect base for exploring the rich cultural heritage of the region. Guests can visit the nearby temples of Borobudur and Prambanan, or take a trip to the beautiful Dieng Plateau. The hotel's friendly and knowledgeable staff are always on hand to assist guests with their travel arrangements and provide recommendations for things to see and do in the area.</p>",
   "features": [
     {
       "_id": "asd1293uasdads1",
       "qty": "3",
       "name": "bedroom",
-      "imageUrl": "/images/icon-bedroom.svg"
+      "imageUrl": "/images/icon-bed.svg"
     },
     {
       "_id": "asd1293uasdads1",
       "qty": "1",
       "name": "living room",
-      "imageUrl": "/images/icon-livingroom.svg"
+      "imageUrl": "/images/icon-living.svg"
     },
     {
       "_id": "asd1293uasdads1",
@@ -46,7 +46,7 @@
       "_id": "asd1293uasdads1",
       "qty": "1",
       "name": "dining room",
-      "imageUrl": "/images/icon-diningroom.svg"
+      "imageUrl": "/images/icon-dining-room.svg"
     },
     {
       "_id": "asd1293uasdads1",
@@ -58,7 +58,7 @@
       "_id": "asd1293uasdads1",
       "qty": "2",
       "name": "units ready",
-      "imageUrl": "/images/icon-airconditioner.svg"
+      "imageUrl": "/images/icon-units.svg"
     },
     {
       "_id": "asd1293uasdads1",
@@ -70,7 +70,7 @@
       "_id": "asd1293uasdads1",
       "qty": "1",
       "name": "television",
-      "imageUrl": "/images/icon-tv.svg"
+      "imageUrl": "/images/icon-television.svg"
     }
   ],
   "activities": [
