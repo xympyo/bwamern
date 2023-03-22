@@ -1,6 +1,6 @@
 {
   "_id": "asd1293uasdads1",
-  "name": "Village Angga",
+  "name": "Hotel of the Thousands",
   "type": "Hotel",
   "imageUrls": [
     {
@@ -17,7 +17,7 @@
     }
   ],
   "country": "Indonesia",
-  "city": "Bogor",
+  "city": "Central Java",
   "price": "52",
   "unit": "night",
   "isPopular": true,
@@ -102,38 +102,38 @@
   "categories": [
     {
       "_id": "asd1293uasdads1",
-      "name": "House with beauty backyard",
+      "name": "Places to visit",
       "items": [
         {
           "_id": "asd1293uasdads1",
-          "name": "PSW Antasari",
+          "name": "Borobudur",
           "imageUrl": "/images/treasure-1.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Kuretakeso",
-          "imageUrl": "/images/treasure-2.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
-          "isPopular": false
-        },
-        {
-          "_id": "asd1293uasdads1",
-          "name": "Arya Duta",
-          "imageUrl": "/images/treasure-3.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Central Java",
+          "city": "Magelang",
           "isPopular": true
         },
         {
           "_id": "asd1293uasdads1",
-          "name": "Grand Dhika",
+          "name": "Prambanan Temple",
+          "imageUrl": "/images/treasure-2.jpg",
+          "country": "Central Java",
+          "city": "East Yogyakarta",
+          "isPopular": true
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Merbabu National Park",
+          "imageUrl": "/images/treasure-3.jpg",
+          "country": "Central Java",
+          "city": "Magelang",
+          "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Dieng Plateau Wonosobo",
           "imageUrl": "/images/treasure-4.jpg",
-          "country": "South Korea",
-          "city": "Seoul Flore",
+          "country": "Central Java",
+          "city": "Wonosobo",
           "isPopular": false
         }
       ]
@@ -143,9 +143,9 @@
     "_id": "asd1293uasdads1",
     "imageUrl": "/images/testimonial-detailspage.jpg",
     "name": "Happy Family",
-    "rate": 4.25,
-    "content": "What a great trip with my family and I should try again and again next time soon...",
-    "familyName": "Angga",
-    "familyOccupation": "UI Designer"
+    "rate": 5,
+    "content": "I recently had the opportunity to visit the Borobudur Temple in Indonesia and let me tell you, it did not disappoint. I felt like I was stepping back in time as I walked through the stone corridors, admiring the intricate carvings and statues that adorned the walls. It was hard to believe that the temple was built in the 9th century!",
+    "familyName": "Dwi Agus Prasetiyo",
+    "familyOccupation": "Photographer"
   }
 }

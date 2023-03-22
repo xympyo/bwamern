@@ -66,6 +66,8 @@ export default class BookingForm extends Component {
     const { data } = this.state;
     const { itemDetails, startBooking } = this.props;
 
+    console.log("itemDetails: ", itemDetails);
+
     return (
       <div className="card bordered" style={{ padding: "60px 80px" }}>
         <h4 className="mb-3">Start Booking</h4>
@@ -85,6 +87,30 @@ export default class BookingForm extends Component {
           name="duration"
           value={data.duration}
         />
+
+        <label htmlFor="date">Pick a date</label>
+        <InputDate onChange={this.updateData} name="date" value={data.date} />
+
+        <h6
+          className="text-gray-500 font-weight-light"
+          style={{ marginBottom: 40 }}
+        >
+          You will pay about{" "}
+          <span className="text-gray-900">
+            ${itemDetails.price * data.duration} USD
+          </span>{" "}
+          per{" "}
+          <span className="text-gray-900">
+            {data.duration} {itemDetails.unit}
+          </span>
+        </h6>
+        <Button
+          className="btn"
+          hasShadow
+          isPrimary
+          isBlock
+          onClick={startBooking}
+        >Continue Book</Button>
       </div>
     );
   }
