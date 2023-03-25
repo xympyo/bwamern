@@ -14,6 +14,7 @@ import Payment from "parts/Checkout/Payment";
 import Completed from "parts/Checkout/Completed";
 
 import ItemDetails from "../json/itemDetails.json";
+import postBooking from "../json/post-booking.json";
 
 export default class Checkout extends Component {
   state = {
@@ -82,7 +83,7 @@ export default class Checkout extends Component {
     return (
       <>
         <Header isCentered />
-        <Stepper steps={steps}>
+        <Stepper steps={steps} data={postBooking}>
           {(prevStep, nextStep, CurrentStep, steps) => (
             <>
               <Numbering
@@ -95,35 +96,37 @@ export default class Checkout extends Component {
 
               <MainContent data={steps} current={CurrentStep} />
 
-              {CurrentStep === "bookingInformation" && (
-                <Controller>
-                  {data.firstName !== "" &&
-                    data.lastName !== "" &&
-                    data.email !== "" &&
-                    data.phone !== "" && (
-                      <Fade>
-                        <Button
-                          className="btn mb-3"
-                          type="button"
-                          isBlock
-                          isPrimary
-                          hasShadow
-                          onClick={nextStep}
-                        >
-                          Continue To Book
-                        </Button>
-                      </Fade>
-                    )}
-                  <Button
-                    className="btn"
-                    type="link"
-                    isBlock
-                    isLight
-                    href={`/properties/${ItemDetails._id}`}
-                  >
-                    Cancel
-                  </Button>
-                </Controller>
+              {CurrentStep === "BookingInformation" && (
+                <Fade>
+                  <Controller>
+                    {data.firstName !== "" &&
+                      data.lastName !== "" &&
+                      data.email !== "" &&
+                      data.phone !== "" && (
+                        <Fade>
+                          <Button
+                            className="btn mb-3"
+                            type="button"
+                            isBlock
+                            isPrimary
+                            hasShadow
+                            onClick={nextStep}
+                          >
+                            Continue To Book
+                          </Button>
+                        </Fade>
+                      )}
+                    <Button
+                      className="btn"
+                      type="link"
+                      isBlock
+                      isLight
+                      href={`/properties/${ItemDetails._id}`}
+                    >
+                      Cancel
+                    </Button>
+                  </Controller>
+                </Fade>
               )}
 
               {CurrentStep === "payment" && (

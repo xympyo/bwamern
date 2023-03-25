@@ -18,8 +18,8 @@ export default function Text(props) {
 
   const [HasError, setHasError] = useState(null);
   let pattern = "";
-  if (type === "email") pattern = /^[^\s@]*@[*\s@]+\.[^\s@]+s/;
-  if (type === "tel") pattern = "[0-9]*";
+  if (type === "email") pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (type === "tel") pattern = /^(^\+62|62|^08)(\d{3,4}-?){2}\d{3,4}$/g;
 
   const onChange = (event) => {
     const target = {
@@ -35,7 +35,7 @@ export default function Text(props) {
     }
 
     if (type === "tel") {
-      if (event.taget.validity.valid) props.onChange(target);
+      if (event.target.validity.valid) props.onChange(target);
     } else {
       props.onChange(target);
     }
